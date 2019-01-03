@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Wyam</id>
+    <version>2.1.1</version>
+    <title>Wyam</title>
+    <authors>Dave Glick</authors>
+    <owners>Dave Glick, wyam</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/Wyamio/Wyam/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://wyam.io/</projectUrl>
+    <iconUrl>https://wyam.io/Content/images/logo-square-64.png</iconUrl>
+    <description>Wyam is a simple to use, highly modular, and extremely configurable static content generator. This is a tools package that contains the Wyam CLI.</description>
+    <copyright>Copyright 2017</copyright>
+    <tags>Wyam Static StaticContent StaticSite Blog BlogEngine</tags>
+    <repository type="git" url="https://github.com/Wyamio/Wyam.git" />
+  </metadata>
+</package>
