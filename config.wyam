@@ -1,8 +1,11 @@
 #recipe Blog
 
 // Customize your settings and add new ones here
-Settings[Keys.Host] = "host.com";
-Settings[BlogKeys.Title] = "My Blog";
+Settings[Keys.Host] = "daveteske.github.io";
+Settings[BlogKeys.Title] = "Developer Notes";
 Settings[BlogKeys.Description] = "Welcome!";
+
+Settings[Keys.LinksUseHttps] = true;
+Settings[Keys.LinkRoot] = "DeveloperNotes";
 
 // Add any pipeline customizations here
