@@ -1,4 +1,6 @@
 packages.xml
 config.wyam.hash
 config.wyam.dll
+config.local.wyam.hash
+config.local.wyam.dll
 [Tt]ools/

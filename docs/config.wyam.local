@@ -1,0 +1,7 @@
+#recipe Blog
+
+// Customize your settings and add new ones here
+Settings[BlogKeys.Title] = "Developer Notes";
+Settings[BlogKeys.Description] = "Welcome!";
+
+// Add any pipeline customizations here

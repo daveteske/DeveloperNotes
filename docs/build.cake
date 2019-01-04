@@ -2,7 +2,7 @@
 #addin nuget:?package=Cake.Wyam&version=2.1.1
 
 // var RootDir = MakeAbsolute(Directory(".")); 
-var buildtarget = Argument("target", "Default");
+var buildtarget = Argument("target", "Build");
 // var waymexe = RootDir + "/tools/wyam/Wyam/tools/net462/Wyam.exe";
 
 Task("Build")
@@ -16,6 +16,7 @@ Task("Preview")
     {
         Wyam(new WyamSettings
         {
+            ConfigurationFile = "config.wyam.local",
             Preview = true,
             Watch = true
         });        
@@ -28,12 +29,12 @@ Task("Deploy")
         if(FileExists("./CNAME"))
             CopyFile("./CNAME", "output/CNAME");
 
-        StartProcess("git", "checkout master");
-        StartProcess("git", "add .");
-        StartProcess("git", "commit -m \"Checking output in for subtree\"");
-        StartProcess("git", "subtree split --prefix docs/output -b gh-pages");
-        StartProcess("git", "push -f origin gh-pages:gh-pages");
-        StartProcess("git", "branch -D gh-pages");
+        // StartProcess("git", "checkout master");
+        // StartProcess("git", "add .");
+        // StartProcess("git", "commit -m \"Checking output in for subtree\"");
+        // StartProcess("git", "subtree split --prefix docs/output -b gh-pages");
+        // StartProcess("git", "push -f origin gh-pages:gh-pages");
+        // StartProcess("git", "branch -D gh-pages");
 
     });
 
