@@ -15,7 +15,7 @@ var (_, _, _, pop1, _, pop2) = QueryCityDataForYears("New York City", 1960, 2010
 ### Currently supported usages
 - Declaration: `var (x, y) = e;`
 - Assignment: `(x, y) = e;` *where x and y have already been declared*
-- foreach `foreach(var(x, y) in e)` *see example below*
+- foreach `foreach(var(x, y) in e)` 
 
 ---
 ### Deconstructing user defined types
@@ -27,11 +27,11 @@ public void Deconstruct(out string firstname, out string lastname, out string mi
 ```
 
 ---
-### Links with concepts
+### Interesting Ideass
 [Task WhenAll Extension](https://compiledexperience.com/blog/posts/abusing-tuples)
 
 --- 
 ### Examples
-[`foreach` Deconstruction](ForEachDeconstruction.cs)
-[Custom Deconstruction](CustomDeconstruction.cs)
+- [`foreach` Deconstruction](ForEachDeconstruction.cs)
+- [Custom Deconstruction](CustomDeconstruction.cs)
   
