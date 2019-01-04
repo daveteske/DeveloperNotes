@@ -31,7 +31,7 @@ Task("Deploy")
         StartProcess("git", "checkout master");
         StartProcess("git", "add .");
         StartProcess("git", "commit -m \"Checking output in for subtree\"");
-        StartProcess("git", "subtree split --prefix output -b gh-pages");
+        StartProcess("git", "subtree split --prefix docs/output -b gh-pages");
         StartProcess("git", "push -f origin gh-pages:gh-pages");
         StartProcess("git", "branch -D gh-pages");
 
