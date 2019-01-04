@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<id>https://daveteske.github.io/DeveloperNotes</id>
+	<id>/</id>
 	<title>Developer Notes</title>
-	<link rel="self" href="https://daveteske.github.io/DeveloperNotes" />
+	<link rel="self" href="/" />
 	<rights>2019</rights>
-	<updated>2019-01-04T17:38:52Z</updated>
+	<updated>2019-01-04T17:40:34Z</updated>
 	<subtitle>Welcome!</subtitle>
 	<entry>
-		<id>https://daveteske.github.io/DeveloperNotes/posts/first-post</id>
+		<id>/posts/first-post</id>
 		<title>Welcome</title>
-		<link href="https://daveteske.github.io/DeveloperNotes/posts/first-post" />
+		<link href="/posts/first-post" />
 		<updated>2019-01-03T00:00:00Z</updated>
 		<content>&lt;p&gt;Welcome to my developer notes site. It's still under construction.&lt;/p&gt;
 &lt;p&gt;Thanks to Wyam for the site generator.&lt;/p&gt;

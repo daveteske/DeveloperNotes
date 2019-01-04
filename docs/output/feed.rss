@@ -2,16 +2,16 @@
 <rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
 	<channel>
 		<title>Developer Notes</title>
-		<link>https://daveteske.github.io/DeveloperNotes</link>
+		<link>/</link>
 		<description>Welcome!</description>
 		<copyright>2019</copyright>
-		<pubDate>Fri, 04 Jan 2019 17:38:52 GMT</pubDate>
-		<lastBuildDate>Fri, 04 Jan 2019 17:38:52 GMT</lastBuildDate>
+		<pubDate>Fri, 04 Jan 2019 17:40:34 GMT</pubDate>
+		<lastBuildDate>Fri, 04 Jan 2019 17:40:34 GMT</lastBuildDate>
 		<item>
 			<title>Welcome</title>
-			<link>https://daveteske.github.io/DeveloperNotes/posts/first-post</link>
+			<link>/posts/first-post</link>
 			<description>&lt;p&gt;Welcome to my developer notes site. It's still under construction.&lt;/p&gt;</description>
-			<guid>https://daveteske.github.io/DeveloperNotes/posts/first-post</guid>
+			<guid isPermaLink="false">/posts/first-post</guid>
 			<pubDate>Thu, 03 Jan 2019 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;Welcome to my developer notes site. It's still under construction.&lt;/p&gt;
 &lt;p&gt;Thanks to Wyam for the site generator.&lt;/p&gt;

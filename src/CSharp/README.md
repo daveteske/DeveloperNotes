@@ -1,3 +1,3 @@
 ## C# and the .Net framework 
 
-- [Tuple aka ValueTuple](Tuple/README.md)
+- [C# 7 Tuple](Tuple/README.md)
