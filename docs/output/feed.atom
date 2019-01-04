@@ -4,15 +4,16 @@
 	<title>Developer Notes</title>
 	<link rel="self" href="https://daveteske.github.io/DeveloperNotes" />
 	<rights>2019</rights>
-	<updated>2019-01-04T17:24:13Z</updated>
+	<updated>2019-01-04T17:31:41Z</updated>
 	<subtitle>Welcome!</subtitle>
 	<entry>
 		<id>https://daveteske.github.io/DeveloperNotes/posts/first-post</id>
 		<title>My very First Post</title>
 		<link href="https://daveteske.github.io/DeveloperNotes/posts/first-post" />
 		<updated>2016-01-01T00:00:00Z</updated>
-		<content>&lt;p&gt;This is my first post!&lt;/p&gt;
+		<content>&lt;p&gt;This is my first post. This is the preview line&lt;/p&gt;
+&lt;p&gt;And the rest goes here.&lt;/p&gt;
 </content>
-		<summary>&lt;p&gt;This is my first post!&lt;/p&gt;</summary>
+		<summary>&lt;p&gt;This is my first post. This is the preview line&lt;/p&gt;</summary>
 	</entry>
 </feed>
