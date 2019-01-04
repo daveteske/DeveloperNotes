@@ -1,7 +1,7 @@
-Title: My very First Post
-Published: 1/1/2016
+Title: Welcome
+Published: 1/3/2019
 Tags: Introduction
 ---
-This is my first post. This is the preview line. How long can it be before it gets moved somewheres else?
+Welcome to my developer notes site. It's still under construction.
 
-And the rest goes here.
+Thanks to Wyam for the site generator.

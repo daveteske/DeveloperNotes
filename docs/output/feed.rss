@@ -5,16 +5,16 @@
 		<link>https://daveteske.github.io/DeveloperNotes</link>
 		<description>Welcome!</description>
 		<copyright>2019</copyright>
-		<pubDate>Fri, 04 Jan 2019 17:34:11 GMT</pubDate>
-		<lastBuildDate>Fri, 04 Jan 2019 17:34:11 GMT</lastBuildDate>
+		<pubDate>Fri, 04 Jan 2019 17:38:52 GMT</pubDate>
+		<lastBuildDate>Fri, 04 Jan 2019 17:38:52 GMT</lastBuildDate>
 		<item>
-			<title>My very First Post</title>
+			<title>Welcome</title>
 			<link>https://daveteske.github.io/DeveloperNotes/posts/first-post</link>
-			<description>&lt;p&gt;This is my first post. This is the preview line. How long can it be before it gets moved somewheres else?&lt;/p&gt;</description>
+			<description>&lt;p&gt;Welcome to my developer notes site. It's still under construction.&lt;/p&gt;</description>
 			<guid>https://daveteske.github.io/DeveloperNotes/posts/first-post</guid>
-			<pubDate>Fri, 01 Jan 2016 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;This is my first post. This is the preview line. How long can it be before it gets moved somewheres else?&lt;/p&gt;
-&lt;p&gt;And the rest goes here.&lt;/p&gt;
+			<pubDate>Thu, 03 Jan 2019 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Welcome to my developer notes site. It's still under construction.&lt;/p&gt;
+&lt;p&gt;Thanks to Wyam for the site generator.&lt;/p&gt;
 </content:encoded>
 		</item>
 	</channel>
