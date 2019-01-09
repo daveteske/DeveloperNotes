@@ -1,11 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<id>https://daveteske.github.io/DeveloperNotes</id>
-	<title>Developer Notes</title>
+	<title>Developer Notes by Dave</title>
 	<link rel="self" href="https://daveteske.github.io/DeveloperNotes" />
 	<rights>2019</rights>
-	<updated>2019-01-09T20:38:26Z</updated>
-	<subtitle>Welcome!</subtitle>
+	<updated>2019-01-09T20:44:49Z</updated>
 	<entry>
 		<id>https://daveteske.github.io/DeveloperNotes/posts/minimal-core-mvc</id>
 		<title>Minimal ASP.Net Core MVC setup</title>
