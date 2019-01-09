@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<id>/</id>
+	<id>https://daveteske.github.io/DeveloperNotes</id>
 	<title>Developer Notes</title>
-	<link rel="self" href="/" />
+	<link rel="self" href="https://daveteske.github.io/DeveloperNotes" />
 	<rights>2019</rights>
-	<updated>2019-01-09T20:35:50Z</updated>
+	<updated>2019-01-09T20:38:26Z</updated>
 	<subtitle>Welcome!</subtitle>
 	<entry>
-		<id>/posts/minimal-core-mvc</id>
+		<id>https://daveteske.github.io/DeveloperNotes/posts/minimal-core-mvc</id>
 		<title>Minimal ASP.Net Core MVC setup</title>
-		<link href="/posts/minimal-core-mvc" />
+		<link href="https://daveteske.github.io/DeveloperNotes/posts/minimal-core-mvc" />
 		<updated>2019-01-08T00:00:00Z</updated>
 		<content>&lt;p&gt;Sometimes I want a very minimal setup, when trying out new things.
 Below will creates such a project (Built with ASP.Net Core 2.1).&lt;/p&gt;
@@ -71,9 +71,9 @@ app.UseCookiePolicy();
 Below will creates such a project (Built with ASP.Net Core 2.1).&lt;/p&gt;</summary>
 	</entry>
 	<entry>
-		<id>/posts/tuple-deconstruction</id>
+		<id>https://daveteske.github.io/DeveloperNotes/posts/tuple-deconstruction</id>
 		<title>Tuple Deconstruction</title>
-		<link href="/posts/tuple-deconstruction" />
+		<link href="https://daveteske.github.io/DeveloperNotes/posts/tuple-deconstruction" />
 		<updated>2019-01-03T00:00:00Z</updated>
 		<content>&lt;p&gt;Added in C# 7&lt;/p&gt;
 &lt;h2 id="deconstruction-tuples"&gt;Deconstruction (Tuples)&lt;/h2&gt;
