@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 
-        <title>Developer Notes - All Tags</title>
+        <title>Developer Notes - Minimal ASP.Net Core MVC setup</title>
         <meta name="description" content="Welcome!" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">        
 
@@ -28,9 +28,9 @@
         <meta name="msapplication-tooltip" content="Developer Notes" />
         <meta name="msapplication-starturl" content="/" />
 
-        <meta property="og:title" content="Developer Notes - All Tags" />
+        <meta property="og:title" content="Developer Notes - Minimal ASP.Net Core MVC setup" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="/_Tags.cshtml" />
+        <meta property="og:url" content="/posts/minimal-core-mvc" />
         <!-- TODO: More social graph meta tags -->
 
         <script src="/assets/js/jquery.min.js"></script>
@@ -88,9 +88,17 @@
                         <div class="container">
                                 <div class="row">
                                         <div class="col-md-12">
-<div class="site-heading">
-    <h1>All Tags</h1>
-</div>                                            </div>
+
+    
+<div class="post-heading">
+    <h1>Minimal ASP.Net Core MVC setup</h1>
+    <div class="meta">        
+Published on Tuesday, January 8, 2019<br>    </div>
+        <div class="tags">
+                    <a role="button" href="/tags/ASPNet,-MVC" class="btn btn-default btn-xs">ASP.Net, MVC</a>
+        </div>     
+</div>
+                                        </div>
                                 </div>
                         </div>
                 </header>
@@ -99,14 +107,66 @@
                 <div class="container">
                         <div class="row">
                                 <div id="content" class="col-md-12">
-                                        <div class="container-sm-height">
-    <div class="row row-sm-height">		
-        <div class="col-sm-12 col-sm-height">            
-                <a role="button" href="/tags/C%23" class="btn btn-default btn-sm"> C# (1)</a>
-                <a role="button" href="/tags/ASPNet,-MVC" class="btn btn-default btn-sm"> ASP.Net, MVC (1)</a>
-        </div>
-    </div>
-</div>
+                                        
+
+<p>Sometimes I want a very minimal setup, when trying out new things.
+Below will creates such a project (Built with ASP.Net Core 2.1).</p>
+<h2 id="steps">Steps</h2>
+<ol>
+<li>Create a new <em>Empty</em> AST.NET Core Web Application</li>
+</ol>
+<p><img src="EmptyMVCProject.png" class="img-fluid" alt="Empty Project " /></p>
+<h3 id="install-mvc-nuget-package">Install MVC nuget package</h3>
+<ol>
+<li><code>Microsoft.AspNetCore.Mvc</code> <em>Note: make sure the version major.minor match the project version. In this case</em></li>
+</ol>
+<pre><code>project --&gt; 2.1
+nuget package --&gt; 2.1.3
+</code></pre>
+<h3 id="modify-startup.cs">Modify Startup.cs</h3>
+<ol>
+<li>add <code>services.AddMvc();</code> to <code>ConfigureServices</code></li>
+<li>optionally add this to <code>Configure</code>
+<pre><code class="language-csharp">else
+{
+    app.UseExceptionHandler(&quot;/Home/Error&quot;);
+    app.UseHsts();
+}
+
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+app.UseCookiePolicy();
+</code></pre>
+</li>
+<li>Replace
+<pre><code class="language-csharp">app.Run(async (context) =&gt;
+{
+ await context.Response.WriteAsync(&quot;Hello World!&quot;);
+});
+</code></pre>
+</li>
+</ol>
+<p>with the following.</p>
+<pre><code class="language-csharp">	app.UseMvc(routes =&gt;
+	{
+    	routes.MapRoute(
+    	    name: &quot;default&quot;,
+    	    template: &quot;{controller=Home}/{action=Index}/{id?}&quot;);
+	});
+</code></pre>
+<h3 id="add-controllers">Add Controllers</h3>
+<ol>
+<li>Create new folder <strong>Controllers</strong></li>
+<li>Create a new <code>HomeController</code></li>
+</ol>
+<h3 id="add-view">Add View</h3>
+<ol>
+<li>Click on <code>Add View...</code> on the controller action. Uncheck the <code>Use layout page</code>.</li>
+</ol>
+<h3 id="run-and-verify">Run and verify</h3>
+
+
+
                                 </div>
                         </div>
                 </div>

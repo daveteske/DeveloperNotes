@@ -4,16 +4,107 @@
 	<title>Developer Notes</title>
 	<link rel="self" href="/" />
 	<rights>2019</rights>
-	<updated>2019-01-04T17:40:34Z</updated>
+	<updated>2019-01-09T16:22:33Z</updated>
 	<subtitle>Welcome!</subtitle>
 	<entry>
-		<id>/posts/first-post</id>
-		<title>Welcome</title>
-		<link href="/posts/first-post" />
-		<updated>2019-01-03T00:00:00Z</updated>
-		<content>&lt;p&gt;Welcome to my developer notes site. It's still under construction.&lt;/p&gt;
-&lt;p&gt;Thanks to Wyam for the site generator.&lt;/p&gt;
+		<id>/posts/minimal-core-mvc</id>
+		<title>Minimal ASP.Net Core MVC setup</title>
+		<link href="/posts/minimal-core-mvc" />
+		<updated>2019-01-08T00:00:00Z</updated>
+		<content>&lt;p&gt;Sometimes I want a very minimal setup, when trying out new things.
+Below will creates such a project (Built with ASP.Net Core 2.1).&lt;/p&gt;
+&lt;h2 id="steps"&gt;Steps&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Create a new &lt;em&gt;Empty&lt;/em&gt; AST.NET Core Web Application&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src="EmptyMVCProject.png" class="img-fluid" alt="Empty Project " /&gt;&lt;/p&gt;
+&lt;h3 id="install-mvc-nuget-package"&gt;Install MVC nuget package&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.AspNetCore.Mvc&lt;/code&gt; &lt;em&gt;Note: make sure the version major.minor match the project version. In this case&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;project --&amp;gt; 2.1
+nuget package --&amp;gt; 2.1.3
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="modify-startup.cs"&gt;Modify Startup.cs&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;add &lt;code&gt;services.AddMvc();&lt;/code&gt; to &lt;code&gt;ConfigureServices&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;optionally add this to &lt;code&gt;Configure&lt;/code&gt;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;else
+{
+    app.UseExceptionHandler(&amp;quot;/Home/Error&amp;quot;);
+    app.UseHsts();
+}
+
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+app.UseCookiePolicy();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;Replace
+&lt;pre&gt;&lt;code class="language-csharp"&gt;app.Run(async (context) =&amp;gt;
+{
+ await context.Response.WriteAsync(&amp;quot;Hello World!&amp;quot;);
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;with the following.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;	app.UseMvc(routes =&amp;gt;
+	{
+    	routes.MapRoute(
+    	    name: &amp;quot;default&amp;quot;,
+    	    template: &amp;quot;{controller=Home}/{action=Index}/{id?}&amp;quot;);
+	});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="add-controllers"&gt;Add Controllers&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Create new folder &lt;strong&gt;Controllers&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Create a new &lt;code&gt;HomeController&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="add-view"&gt;Add View&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Click on &lt;code&gt;Add View...&lt;/code&gt; on the controller action. Uncheck the &lt;code&gt;Use layout page&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="run-and-verify"&gt;Run and verify&lt;/h3&gt;
 </content>
-		<summary>&lt;p&gt;Welcome to my developer notes site. It's still under construction.&lt;/p&gt;</summary>
+		<summary>&lt;p&gt;Sometimes I want a very minimal setup, when trying out new things.
+Below will creates such a project (Built with ASP.Net Core 2.1).&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>/posts/tuple-deconstruction</id>
+		<title>Tuple Deconstruction</title>
+		<link href="/posts/tuple-deconstruction" />
+		<updated>2019-01-03T00:00:00Z</updated>
+		<content>&lt;p&gt;Added in C# 7&lt;/p&gt;
+&lt;h2 id="deconstruction-tuples"&gt;Deconstruction (Tuples)&lt;/h2&gt;
+&lt;h3 id="basic-syntax"&gt;Basic syntax&lt;/h3&gt;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;var (name, address, city, zip) = contact.GetAddress();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;it's possible to ignore fields by using the &lt;code&gt;_&lt;/code&gt; placeholder.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;var (_, _, _, pop1, _, pop2) = QueryCityDataForYears(&amp;quot;New York City&amp;quot;, 1960, 2010);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h3 id="currently-supported-usages"&gt;Currently supported usages&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Declaration: &lt;code&gt;var (x, y) = e;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Assignment: &lt;code&gt;(x, y) = e;&lt;/code&gt; &lt;em&gt;where x and y have already been declared&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;foreach &lt;code&gt;foreach(var(x, y) in e)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h3 id="deconstructing-user-defined-types"&gt;Deconstructing user defined types&lt;/h3&gt;
+&lt;p&gt;Need to add one or more &lt;code&gt;Deconstruct&lt;/code&gt; methods.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;public void Deconstruct(out string firstname, out string lastname, out string middleinitial)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h3 id="interesting-ideass"&gt;Interesting Ideass&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://compiledexperience.com/blog/posts/abusing-tuples"&gt;Task WhenAll Extension&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="examples"&gt;Examples&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="ForEachDeconstruction.cs"&gt;&lt;code&gt;foreach&lt;/code&gt; Deconstruction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="CustomDeconstruction.cs"&gt;Custom Deconstruction&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>&lt;p&gt;Added in C# 7&lt;/p&gt;</summary>
 	</entry>
 </feed>

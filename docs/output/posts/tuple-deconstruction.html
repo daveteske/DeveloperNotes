@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 
-        <title>Developer Notes - Introduction</title>
+        <title>Developer Notes - Tuple Deconstruction</title>
         <meta name="description" content="Welcome!" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">        
 
@@ -28,9 +28,9 @@
         <meta name="msapplication-tooltip" content="Developer Notes" />
         <meta name="msapplication-starturl" content="/" />
 
-        <meta property="og:title" content="Developer Notes - Introduction" />
+        <meta property="og:title" content="Developer Notes - Tuple Deconstruction" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="/tags/Introduction" />
+        <meta property="og:url" content="/posts/tuple-deconstruction" />
         <!-- TODO: More social graph meta tags -->
 
         <script src="/assets/js/jquery.min.js"></script>
@@ -88,9 +88,17 @@
                         <div class="container">
                                 <div class="row">
                                         <div class="col-md-12">
-<div class="site-heading">
-    <h1>Introduction</h1>
-</div>                                            </div>
+
+    
+<div class="post-heading">
+    <h1>Tuple Deconstruction</h1>
+    <div class="meta">        
+Published on Thursday, January 3, 2019<br>    </div>
+        <div class="tags">
+                    <a role="button" href="/tags/C%23" class="btn btn-default btn-xs">C#</a>
+        </div>     
+</div>
+                                        </div>
                                 </div>
                         </div>
                 </header>
@@ -99,34 +107,40 @@
                 <div class="container">
                         <div class="row">
                                 <div id="content" class="col-md-12">
-                                        <div class="container-sm-height">
-    <div class="row row-sm-height">
-        <div class="col-sm-8 right-border col-sm-height">
-            
-        <div class="post-list">
-            <a href="/posts/first-post">
-                <h3 class="post-title">Welcome</h3>
-            </a>
-            <p class="post-meta">Posted on Thursday, January 3, 2019</p>      
-        </div>   
+                                        
+
+<p>Added in C# 7</p>
+<h2 id="deconstruction-tuples">Deconstruction (Tuples)</h2>
+<h3 id="basic-syntax">Basic syntax</h3>
+<pre><code class="language-csharp">var (name, address, city, zip) = contact.GetAddress();
+</code></pre>
+<p>it's possible to ignore fields by using the <code>_</code> placeholder.</p>
+<pre><code class="language-csharp">var (_, _, _, pop1, _, pop2) = QueryCityDataForYears(&quot;New York City&quot;, 1960, 2010);
+</code></pre>
+<hr />
+<h3 id="currently-supported-usages">Currently supported usages</h3>
+<ul>
+<li>Declaration: <code>var (x, y) = e;</code></li>
+<li>Assignment: <code>(x, y) = e;</code> <em>where x and y have already been declared</em></li>
+<li>foreach <code>foreach(var(x, y) in e)</code></li>
+</ul>
+<hr />
+<h3 id="deconstructing-user-defined-types">Deconstructing user defined types</h3>
+<p>Need to add one or more <code>Deconstruct</code> methods.</p>
+<pre><code class="language-csharp">public void Deconstruct(out string firstname, out string lastname, out string middleinitial)
+</code></pre>
+<hr />
+<h3 id="interesting-ideass">Interesting Ideass</h3>
+<p><a href="https://compiledexperience.com/blog/posts/abusing-tuples">Task WhenAll Extension</a></p>
+<hr />
+<h3 id="examples">Examples</h3>
+<ul>
+<li><a href="ForEachDeconstruction.cs"><code>foreach</code> Deconstruction</a></li>
+<li><a href="CustomDeconstruction.cs">Custom Deconstruction</a></li>
+</ul>
 
 
-            <nav>
-                <ul class="pager">
-                    <li class="previous">                
-                    </li>
-                    <li class="next">
-                    </li>
-                </ul>
-            </nav>
-            <hr class="visible-xs-block" />
-        </div>
-		
-        <div class="col-sm-4 col-sm-height">
-                <a role="button" href="/tags/Introduction" class="btn btn-primary btn-xs">Introduction (1)</a>
-        </div>
-    </div>
-</div>
+
                                 </div>
                         </div>
                 </div>
