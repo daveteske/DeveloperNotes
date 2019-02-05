@@ -6,6 +6,8 @@ Tags: ASP.Net, MVC
 Sometimes I want a very minimal setup, when trying out new things.
 Below will creates such a project (Built with ASP.Net Core 2.1). 
 
+Source Repo ![https://github.com/daveteske/CoreMVCMinimal](https://github.com/daveteske/CoreMVCMinimal)
+
 ## Steps
 
 1. Create a new *Empty* AST.NET Core Web Application

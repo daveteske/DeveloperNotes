@@ -1,6 +1,6 @@
 Title: Tuple Deconstruction
 Published: 1/3/2019
-Tags: C#
+Tags: C#, Note
 ---
 
 Added in C# 7 
@@ -39,6 +39,6 @@ public void Deconstruct(out string firstname, out string lastname, out string mi
 
 --- 
 ### Examples
-- [`foreach` Deconstruction](ForEachDeconstruction.cs)
-- [Custom Deconstruction](CustomDeconstruction.cs)
+- [`foreach` Deconstruction](https://github.com/daveteske/csharp-code/blob/master/Code/Tuple/ForEachDeconstruction.cs)
+- [Custom Deconstruction](https://github.com/daveteske/csharp-code/blob/master/Code/Tuple/CustomDeconstruct.cs)
   
