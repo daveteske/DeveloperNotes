@@ -1,0 +1,3 @@
+- `build -target build`
+- `build -target preview`
+- `build -target deploy`
