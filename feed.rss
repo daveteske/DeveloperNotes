@@ -5,8 +5,8 @@
 		<link>https://daveteske.github.io/DeveloperNotes</link>
 		<description />
 		<copyright>2019</copyright>
-		<pubDate>Wed, 09 Jan 2019 20:52:01 GMT</pubDate>
-		<lastBuildDate>Wed, 09 Jan 2019 20:52:01 GMT</lastBuildDate>
+		<pubDate>Tue, 05 Feb 2019 14:54:16 GMT</pubDate>
+		<lastBuildDate>Tue, 05 Feb 2019 14:54:16 GMT</lastBuildDate>
 		<item>
 			<title>Minimal ASP.Net Core MVC setup</title>
 			<link>https://daveteske.github.io/DeveloperNotes/posts/minimal-core-mvc</link>
@@ -16,6 +16,7 @@ Below will creates such a project (Built with ASP.Net Core 2.1).&lt;/p&gt;</desc
 			<pubDate>Tue, 08 Jan 2019 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;Sometimes I want a very minimal setup, when trying out new things.
 Below will creates such a project (Built with ASP.Net Core 2.1).&lt;/p&gt;
+&lt;p&gt;Source Repo &lt;img src="https://github.com/daveteske/CoreMVCMinimal" class="img-fluid" alt="https://github.com/daveteske/CoreMVCMinimal" /&gt;&lt;/p&gt;
 &lt;h2 id="steps"&gt;Steps&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Create a new &lt;em&gt;Empty&lt;/em&gt; AST.NET Core Web Application&lt;/li&gt;
@@ -103,8 +104,8 @@ app.UseCookiePolicy();
 &lt;hr /&gt;
 &lt;h3 id="examples"&gt;Examples&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="ForEachDeconstruction.cs"&gt;&lt;code&gt;foreach&lt;/code&gt; Deconstruction&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="CustomDeconstruction.cs"&gt;Custom Deconstruction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/daveteske/csharp-code/blob/master/Code/Tuple/ForEachDeconstruction.cs"&gt;&lt;code&gt;foreach&lt;/code&gt; Deconstruction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/daveteske/csharp-code/blob/master/Code/Tuple/CustomDeconstruct.cs"&gt;Custom Deconstruction&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 		</item>
