@@ -2,7 +2,7 @@
 #addin nuget:?package=Cake.Wyam&version=2.1.1
 
 // var RootDir = MakeAbsolute(Directory(".")); 
-var buildtarget = Argument("target", "Build");
+var buildtarget = Argument("target", "Deploy");
 // var waymexe = RootDir + "/tools/wyam/Wyam/tools/net462/Wyam.exe";
 
 Task("Build")
