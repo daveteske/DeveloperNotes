@@ -10,7 +10,7 @@ Source Repo ![https://github.com/daveteske/CoreMVCMinimal](https://github.com/da
 
 ## Steps
 
-1. Create a new *Empty* AST.NET Core Web Application
+1. Create a new *Empty* ASP.NET Core Web Application
 
 ![Empty Project ](EmptyMVCProject.png)
 
