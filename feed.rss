@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
 	<channel>
-		<title>Developer Notes by Dave</title>
-		<link>https://daveteske.github.io/DeveloperNotes</link>
-		<description />
+		<title>Developer Notes</title>
+		<link>/</link>
+		<description>Local Build</description>
 		<copyright>2019</copyright>
-		<pubDate>Mon, 04 Mar 2019 20:58:29 GMT</pubDate>
-		<lastBuildDate>Mon, 04 Mar 2019 20:58:29 GMT</lastBuildDate>
+		<pubDate>Thu, 14 Mar 2019 20:25:06 GMT</pubDate>
+		<lastBuildDate>Thu, 14 Mar 2019 20:25:06 GMT</lastBuildDate>
 		<item>
 			<title>Debug your IOS device browser on Windows</title>
-			<link>https://daveteske.github.io/DeveloperNotes/posts/debug-ios-windows</link>
+			<link>/posts/debug-ios-windows</link>
 			<description>&lt;p&gt;You'll need the awesome &lt;a href="https://github.com/RemoteDebug/remotedebug-ios-webkit-adapter"&gt;remotedebug-ios-webkit-adapter&lt;/a&gt;. Follow the install instructions.
 Requires &lt;a href="https://github.com/lukesampson/scoop"&gt;scoop&lt;/a&gt;.&lt;/p&gt;</description>
-			<guid>https://daveteske.github.io/DeveloperNotes/posts/debug-ios-windows</guid>
+			<guid isPermaLink="false">/posts/debug-ios-windows</guid>
 			<pubDate>Tue, 08 Jan 2019 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;h2 id="setting-up-to-remotely-debug-your-iosphonetablet-from-windows"&gt;Setting up to remotely debug your IOS(phone/tablet) from Windows&lt;/h2&gt;
 &lt;p&gt;You'll need the awesome &lt;a href="https://github.com/RemoteDebug/remotedebug-ios-webkit-adapter"&gt;remotedebug-ios-webkit-adapter&lt;/a&gt;. Follow the install instructions.
@@ -25,10 +25,10 @@ Requires &lt;a href="https://github.com/lukesampson/scoop"&gt;scoop&lt;/a&gt;.&l
 		</item>
 		<item>
 			<title>Minimal ASP.Net Core MVC setup</title>
-			<link>https://daveteske.github.io/DeveloperNotes/posts/minimal-core-mvc</link>
+			<link>/posts/minimal-core-mvc</link>
 			<description>&lt;p&gt;Sometimes I want a very minimal setup, when trying out new things.
 Below will creates such a project (Built with ASP.Net Core 2.1).&lt;/p&gt;</description>
-			<guid>https://daveteske.github.io/DeveloperNotes/posts/minimal-core-mvc</guid>
+			<guid isPermaLink="false">/posts/minimal-core-mvc</guid>
 			<pubDate>Tue, 08 Jan 2019 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;Sometimes I want a very minimal setup, when trying out new things.
 Below will creates such a project (Built with ASP.Net Core 2.1).&lt;/p&gt;
@@ -90,9 +90,9 @@ app.UseCookiePolicy();
 		</item>
 		<item>
 			<title>Tuple Deconstruction</title>
-			<link>https://daveteske.github.io/DeveloperNotes/posts/tuple-deconstruction</link>
+			<link>/posts/tuple-deconstruction</link>
 			<description>&lt;p&gt;Added in C# 7&lt;/p&gt;</description>
-			<guid>https://daveteske.github.io/DeveloperNotes/posts/tuple-deconstruction</guid>
+			<guid isPermaLink="false">/posts/tuple-deconstruction</guid>
 			<pubDate>Thu, 03 Jan 2019 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;Added in C# 7&lt;/p&gt;
 &lt;h2 id="deconstruction-tuples"&gt;Deconstruction (Tuples)&lt;/h2&gt;
