@@ -1,14 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<id>https://daveteske.github.io/DeveloperNotes</id>
-	<title>Developer Notes by Dave</title>
-	<link rel="self" href="https://daveteske.github.io/DeveloperNotes" />
+	<id>/</id>
+	<title>Developer Notes</title>
+	<link rel="self" href="/" />
 	<rights>2019</rights>
-	<updated>2019-03-04T20:58:29Z</updated>
+	<updated>2019-03-14T20:25:06Z</updated>
+	<subtitle>Local Build</subtitle>
 	<entry>
-		<id>https://daveteske.github.io/DeveloperNotes/posts/debug-ios-windows</id>
+		<id>/posts/debug-ios-windows</id>
 		<title>Debug your IOS device browser on Windows</title>
-		<link href="https://daveteske.github.io/DeveloperNotes/posts/debug-ios-windows" />
+		<link href="/posts/debug-ios-windows" />
 		<updated>2019-01-08T00:00:00Z</updated>
 		<content>&lt;h2 id="setting-up-to-remotely-debug-your-iosphonetablet-from-windows"&gt;Setting up to remotely debug your IOS(phone/tablet) from Windows&lt;/h2&gt;
 &lt;p&gt;You'll need the awesome &lt;a href="https://github.com/RemoteDebug/remotedebug-ios-webkit-adapter"&gt;remotedebug-ios-webkit-adapter&lt;/a&gt;. Follow the install instructions.
@@ -22,9 +23,9 @@ Requires &lt;a href="https://github.com/lukesampson/scoop"&gt;scoop&lt;/a&gt;.&l
 Requires &lt;a href="https://github.com/lukesampson/scoop"&gt;scoop&lt;/a&gt;.&lt;/p&gt;</summary>
 	</entry>
 	<entry>
-		<id>https://daveteske.github.io/DeveloperNotes/posts/minimal-core-mvc</id>
+		<id>/posts/minimal-core-mvc</id>
 		<title>Minimal ASP.Net Core MVC setup</title>
-		<link href="https://daveteske.github.io/DeveloperNotes/posts/minimal-core-mvc" />
+		<link href="/posts/minimal-core-mvc" />
 		<updated>2019-01-08T00:00:00Z</updated>
 		<content>&lt;p&gt;Sometimes I want a very minimal setup, when trying out new things.
 Below will creates such a project (Built with ASP.Net Core 2.1).&lt;/p&gt;
@@ -87,9 +88,9 @@ app.UseCookiePolicy();
 Below will creates such a project (Built with ASP.Net Core 2.1).&lt;/p&gt;</summary>
 	</entry>
 	<entry>
-		<id>https://daveteske.github.io/DeveloperNotes/posts/tuple-deconstruction</id>
+		<id>/posts/tuple-deconstruction</id>
 		<title>Tuple Deconstruction</title>
-		<link href="https://daveteske.github.io/DeveloperNotes/posts/tuple-deconstruction" />
+		<link href="/posts/tuple-deconstruction" />
 		<updated>2019-01-03T00:00:00Z</updated>
 		<content>&lt;p&gt;Added in C# 7&lt;/p&gt;
 &lt;h2 id="deconstruction-tuples"&gt;Deconstruction (Tuples)&lt;/h2&gt;
