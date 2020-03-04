@@ -41,4 +41,7 @@ public void Deconstruct(out string firstname, out string lastname, out string mi
 ### Examples
 - [`foreach` Deconstruction](https://github.com/daveteske/csharp-code/blob/master/Code/Tuple/ForEachDeconstruction.cs)
 - [Custom Deconstruction](https://github.com/daveteske/csharp-code/blob/master/Code/Tuple/CustomDeconstruct.cs)
+
+### Nifty I can do this right in GitHub
+- and it works
   
